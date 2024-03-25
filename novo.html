@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tela Sempre Acesa</title>
+</head>
+<body>
+  <h1>Tela Sempre Acesa</h1>
+  <p>Este código impede que a tela do seu dispositivo Android se apague.</p>
+  <p>**Atenção:** Este código pode consumir bateria e causar desgaste da tela.</p>
+  <script>
+    // Função para manter a tela sempre acesa
+    function manterTelaAcesa() {
+      // Cria um elemento de vídeo
+      var video = document.createElement("video");
+      
+      // Define a fonte do vídeo como um loop infinito
+      video.src = "https://looptube.io/";
+      video.loop = true;
+      
+      // Define o volume do vídeo como zero para evitar som
+      video.volume = 0;
+      
+      // Adiciona o vídeo ao corpo da página
+      document.body.appendChild(video);
+      
+      // Reproduz o vídeo
+      video.play();
+    }
+    
+    // Chama a função para manter a tela sempre acesa
+    manterTelaAcesa();
+  </script>
+</body>
+</html>
